@@ -448,28 +448,28 @@ class TaskOneKtTest {
         assertEquals(expectedResult, result)
     }
 
-//    @Test
-//    fun showCommissionMirError() {
-//        // arrange
-//        val typeCard: String = "Мир"
-//        val cardTodayInPenny: Long = 0
-//        val cardMonthInPenny: Long = 0
-//        val vkMonthInPenny: Long = 0
-//        val currentPaymentInPenny: Long = 1550000
-//        val expectedResult = "13625"
-//
-//        // act
-//        val result = showCommission(
-//            typeCard,
-//            cardTodayInPenny,
-//            cardMonthInPenny,
-//            vkMonthInPenny,
-//            currentPaymentInPenny,
-//        )
-//
-//        // assert
-//        assertEquals(expectedResult, result)
-//    }
+    @Test
+    fun showCommissionMirError() {
+        // arrange
+        val typeCard: String = "Мир"
+        val cardTodayInPenny: Long = 0
+        val cardMonthInPenny: Long = 0
+        val vkMonthInPenny: Long = 0
+        val currentPaymentInPenny: Long = 1550000
+        val expectedResult = "13625"
+
+        // act
+        val result = showCommission(
+            typeCard,
+            cardTodayInPenny,
+            cardMonthInPenny,
+            vkMonthInPenny,
+            currentPaymentInPenny,
+        )
+
+        // assert
+        assertEquals(expectedResult, result)
+    }
 
     @Test
     fun showCardTypeandAccountTypeNotSupported() {
